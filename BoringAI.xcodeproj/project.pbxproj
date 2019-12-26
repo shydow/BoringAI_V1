@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		DF0607AF23A1E09600AEC1EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0607AE23A1E09600AEC1EF /* AppDelegate.swift */; };
 		DF0607B123A1E09600AEC1EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0607B023A1E09600AEC1EF /* SceneDelegate.swift */; };
-		DF0607B323A1E09600AEC1EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0607B223A1E09600AEC1EF /* ContentView.swift */; };
 		DF0607B523A1E09800AEC1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0607B423A1E09800AEC1EF /* Assets.xcassets */; };
 		DF0607B823A1E09800AEC1EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0607B723A1E09800AEC1EF /* Preview Assets.xcassets */; };
 		DF0607BB23A1E09800AEC1EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0607B923A1E09800AEC1EF /* LaunchScreen.storyboard */; };
+		DF0607CE23A1E4E900AEC1EF /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0607CD23A1E4E900AEC1EF /* Index.swift */; };
+		DF0607D023A20ADA00AEC1EF /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DF0607CF23A20ADA00AEC1EF /* MobileNet.mlmodel */; };
+		DF0607D423A21D8F00AEC1EF /* ClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0607D323A21D8F00AEC1EF /* ClassificationView.swift */; };
+		DF48A73F23ACB36300C02059 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48A73D23ACB36300C02059 /* PreviewViewController.swift */; };
+		DFCF207323A8A779001994D7 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCF207223A8A779001994D7 /* PreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF0607AB23A1E09600AEC1EF /* BoringAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoringAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF0607AE23A1E09600AEC1EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF0607B023A1E09600AEC1EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF0607B223A1E09600AEC1EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF0607B423A1E09800AEC1EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF0607B723A1E09800AEC1EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF0607BA23A1E09800AEC1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF0607BC23A1E09800AEC1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF0607CD23A1E4E900AEC1EF /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		DF0607CF23A20ADA00AEC1EF /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		DF0607D323A21D8F00AEC1EF /* ClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationView.swift; sourceTree = "<group>"; };
+		DF48A73D23ACB36300C02059 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		DFCF207223A8A779001994D7 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,23 +64,75 @@
 		DF0607AD23A1E09600AEC1EF /* BoringAI */ = {
 			isa = PBXGroup;
 			children = (
-				DF0607AE23A1E09600AEC1EF /* AppDelegate.swift */,
-				DF0607B023A1E09600AEC1EF /* SceneDelegate.swift */,
-				DF0607B223A1E09600AEC1EF /* ContentView.swift */,
-				DF0607B423A1E09800AEC1EF /* Assets.xcassets */,
-				DF0607B923A1E09800AEC1EF /* LaunchScreen.storyboard */,
-				DF0607BC23A1E09800AEC1EF /* Info.plist */,
-				DF0607B623A1E09800AEC1EF /* Preview Content */,
+				DF0607C623A1E15300AEC1EF /* Models */,
+				DF0607C523A1E14C00AEC1EF /* ViewModels */,
+				DF0607C423A1E13F00AEC1EF /* Views */,
+				DF0607C223A1E11100AEC1EF /* System */,
+				DF0607C323A1E12800AEC1EF /* Resources */,
 			);
 			path = BoringAI;
 			sourceTree = "<group>";
 		};
-		DF0607B623A1E09800AEC1EF /* Preview Content */ = {
+		DF0607C223A1E11100AEC1EF /* System */ = {
 			isa = PBXGroup;
 			children = (
-				DF0607B723A1E09800AEC1EF /* Preview Assets.xcassets */,
+				DF0607AE23A1E09600AEC1EF /* AppDelegate.swift */,
+				DF0607B023A1E09600AEC1EF /* SceneDelegate.swift */,
+				DF0607B923A1E09800AEC1EF /* LaunchScreen.storyboard */,
 			);
-			path = "Preview Content";
+			path = System;
+			sourceTree = "<group>";
+		};
+		DF0607C323A1E12800AEC1EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF0607B423A1E09800AEC1EF /* Assets.xcassets */,
+				DF0607B723A1E09800AEC1EF /* Preview Assets.xcassets */,
+				DF0607BC23A1E09800AEC1EF /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF0607C423A1E13F00AEC1EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF0607CC23A1E4DD00AEC1EF /* Screens */,
+				DF0607CB23A1E4D400AEC1EF /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF0607C523A1E14C00AEC1EF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DF0607C623A1E15300AEC1EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF0607CF23A20ADA00AEC1EF /* MobileNet.mlmodel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF0607CB23A1E4D400AEC1EF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DFCF207223A8A779001994D7 /* PreviewView.swift */,
+				DF48A73D23ACB36300C02059 /* PreviewViewController.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DF0607CC23A1E4DD00AEC1EF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DF0607CD23A1E4E900AEC1EF /* Index.swift */,
+				DF0607D323A21D8F00AEC1EF /* ClassificationView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0607AF23A1E09600AEC1EF /* AppDelegate.swift in Sources */,
+				DF0607D423A21D8F00AEC1EF /* ClassificationView.swift in Sources */,
+				DFCF207323A8A779001994D7 /* PreviewView.swift in Sources */,
+				DF48A73F23ACB36300C02059 /* PreviewViewController.swift in Sources */,
 				DF0607B123A1E09600AEC1EF /* SceneDelegate.swift in Sources */,
-				DF0607B323A1E09600AEC1EF /* ContentView.swift in Sources */,
+				DF0607D023A20ADA00AEC1EF /* MobileNet.mlmodel in Sources */,
+				DF0607CE23A1E4E900AEC1EF /* Index.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,10 +349,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"BoringAI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BoringAI/Resources\"";
 				DEVELOPMENT_TEAM = 54KK293V84;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = BoringAI/Info.plist;
+				INFOPLIST_FILE = BoringAI/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,10 +369,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"BoringAI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BoringAI/Resources\"";
 				DEVELOPMENT_TEAM = 54KK293V84;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = BoringAI/Info.plist;
+				INFOPLIST_FILE = BoringAI/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
